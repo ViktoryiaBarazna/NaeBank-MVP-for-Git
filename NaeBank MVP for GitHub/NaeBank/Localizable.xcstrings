@@ -1,0 +1,1464 @@
+{
+  "sourceLanguage" : "ru",
+  "strings" : {
+    "after_register_title" : {
+      "comment" : "Поздравление с регистрацией",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Congrats!!!! You have successfully registered with NaeBank!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Поздравляем! Вы успешно зарегистрировались в NaeBank!"
+          }
+        }
+      }
+    },
+    "cancel" : {
+      "comment" : "Отмена",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отмена"
+          }
+        }
+      }
+    },
+    "check_login_and_password" : {
+      "comment" : "Логин. Сообщение о пустых строках",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check your phone number and password."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Проверьте номер телефона и пароль."
+          }
+        }
+      }
+    },
+    "error" : {
+      "comment" : "Ошибка",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка"
+          }
+        }
+      }
+    },
+    "exchange_rates_buy_currency" : {
+      "comment" : "Курсы валют. Покупка. ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Buy: %1$@ %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Покупка: %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "exchange_rates_currency_cny" : {
+      "comment" : "Курсы валют. Юань",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🇨🇳 Yuan (per 10)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🇨🇳 Юань (за 10)"
+          }
+        }
+      }
+    },
+    "exchange_rates_currency_euro" : {
+      "comment" : "Курсы валют. Евро",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💶 Euro"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💶 Евро"
+          }
+        }
+      }
+    },
+    "exchange_rates_currency_rub" : {
+      "comment" : "Курсы валют. Российский рубль",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🇷🇺 Russian ruble (per 100)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🇷🇺 Рубль РФ (за 100)"
+          }
+        }
+      }
+    },
+    "exchange_rates_currency_usd" : {
+      "comment" : "Курсы валют. Доллар США",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💵 USD"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💵 Доллар США"
+          }
+        }
+      }
+    },
+    "exchange_rates_error" : {
+      "comment" : "Курсы валют. Ошибка",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❌ Error"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❌ Ошибка"
+          }
+        }
+      }
+    },
+    "exchange_rates_sell_currency" : {
+      "comment" : "Курсы валют. Продажа. ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sell: %1$@ %2$@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Продажа: %1$@ %2$@"
+          }
+        }
+      }
+    },
+    "exchange_rates_title" : {
+      "comment" : "Курсы валют. Заголовок ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exchange rates"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курсы валют"
+          }
+        }
+      }
+    },
+    "fill_phone_number" : {
+      "comment" : "Логин. Сообщение о не введенном телефоне",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter your phone number."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите номер телефона."
+          }
+        }
+      }
+    },
+    "login_account_not_found" : {
+      "comment" : "Логин. Аккаунт с таким номером не найден",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The user with this number has not been found. Please register."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пользователь с таким номером не найден. Пожалуйста, зарегистрируйтесь."
+          }
+        }
+      }
+    },
+    "login_button" : {
+      "comment" : "Кнопка «Войти»",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Login ->"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Войти ->"
+          }
+        }
+      }
+    },
+    "login_data_load_failed" : {
+      "comment" : "Логин. Не удалось загрузить данные",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to load data. Try again later."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка загрузки данных. Попробуйте позже."
+          }
+        }
+      }
+    },
+    "login_footer" : {
+      "comment" : "Логин. Футер",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "SECURED WITH AES-256 ENCRYPTION"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ЗАЩИЩЕНО AES-256 ENCRYPTION"
+          }
+        }
+      }
+    },
+    "login_password_descr1" : {
+      "comment" : "Логин. Комментарий внутри плейсхолдера  с паролем",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "    Enter your password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "    Введите Ваш пароль"
+          }
+        }
+      }
+    },
+    "login_password_descr2" : {
+      "comment" : "Логин. Описание под плейсхолдером с вводом пароля",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At least 8 characters, including digits."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Минимум 8 символов, включая цифры."
+          }
+        }
+      }
+    },
+    "login_password_incorrect" : {
+      "comment" : "Логин. Неверный пароль",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid password"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неверный пароль"
+          }
+        }
+      }
+    },
+    "login_password_not_entered" : {
+      "comment" : "Логин. Пароль не введён",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the password."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите пароль."
+          }
+        }
+      }
+    },
+    "login_phone_descr" : {
+      "comment" : "Логин. Комментарий к вводу номера телефона",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Make sure to use the phone number you provided when registering."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Используйте номер телефона, указанный при регистрации."
+          }
+        }
+      }
+    },
+    "login_phone_invalid_format" : {
+      "comment" : "Логин. Неверный формат номера телефона",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone number must be in the format +375XXXXXXXXX"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номер телефона должен быть в формате +375XXXXXXXXX"
+          }
+        }
+      }
+    },
+    "login_phone_not_entered" : {
+      "comment" : "Логин. Номер телефона не введён",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone number not entered."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номер телефона не введён."
+          }
+        }
+      }
+    },
+    "login_subtitle" : {
+      "comment" : "Логин. Описание",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "To securely access your financial management, enter your information."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите свои данные для безопасного доступа к управлению финансами."
+          }
+        }
+      }
+    },
+    "login_title" : {
+      "comment" : "Логин. Заголовок",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome back!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "С возвращением!"
+          }
+        }
+      }
+    },
+    "logout_button" : {
+      "comment" : "Кнопка выхода из приложения",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Quit the app"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выйти из приложения"
+          }
+        }
+      }
+    },
+    "main_page_exchange_rates_button" : {
+      "comment" : "Главная. Кнопка курсов валют",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Exchange rates"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Курсы валют"
+          }
+        }
+      }
+    },
+    "main_page_news_button" : {
+      "comment" : "Главная. Кнопка новостей",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новости"
+          }
+        }
+      }
+    },
+    "main_page_subtitle1" : {
+      "comment" : "Главная. Подзаголовок для курсов валют",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For instance, you can use a currency to pay the price "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Например, ты можешь обменять валюту па очэнь выгаднаму курсу"
+          }
+        }
+      }
+    },
+    "main_page_subtitle2" : {
+      "comment" : "Главная. Подзаголовок для новостей",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Or to discover other intriguing stories in the news."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Или узнать другие наши заманчывые прэдлажэния у навастях"
+          }
+        }
+      }
+    },
+    "main_page_title" : {
+      "comment" : "Главная. Заголовок",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can invest your money in a variety of great value propositions to make the developers of this application better off."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "У нас много выгодных предложений, куда ты можешь вложить свои денежки, чтобы разработчики этого приложения жили лучше."
+          }
+        }
+      }
+    },
+    "network_error_connection" : {
+      "comment" : "Сеть. Ошибка соединения или транспорта. ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Network error: %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка сети: %@"
+          }
+        }
+      }
+    },
+    "network_error_decoding" : {
+      "comment" : "Сеть. Ошибка декодирования ответа. ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Decoding error: %@"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка декодирования: %@"
+          }
+        }
+      }
+    },
+    "network_error_empty_response" : {
+      "comment" : "Сеть. Нет данных в ответе сервера",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No data in response"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нет данных в ответе"
+          }
+        }
+      }
+    },
+    "network_error_http_status" : {
+      "comment" : "Сеть. HTTP-ошибка. ",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HTTP error (code %d)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "HTTP ошибка (код %d)"
+          }
+        }
+      }
+    },
+    "network_error_invalid_url" : {
+      "comment" : "Сеть. Неверный URL запроса",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Invalid URL"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Неверный URL"
+          }
+        }
+      }
+    },
+    "news_error" : {
+      "comment" : "Новости. Ошибка",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❌ Error"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "❌ Ошибка"
+          }
+        }
+      }
+    },
+    "news_title" : {
+      "comment" : "Новости. Заголовок",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "News"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Новости"
+          }
+        }
+      }
+    },
+    "onboarding_descr_subtitle1" : {
+      "comment" : "Онбординг. Описание 1",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A simple and secure mobile bank for your daily finances."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Простой и безопасный мобильный банк для ваших ежедневных финансов."
+          }
+        }
+      }
+    },
+    "onboarding_descr_subtitle2" : {
+      "comment" : "Онбординг. Описание 2",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Manage accounts, transfer money and pay for services quickly and securely in one place."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Управляйте счетами, переводите деньги и оплачивайте услуги быстро и безопасно в одно касание."
+          }
+        }
+      }
+    },
+    "onboarding_footer_title" : {
+      "comment" : "Онбординг. Футер",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Privacy • Terms V2.4.0 • Everything that is his becomes ours"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Конфиденциальность • Условия V2.4.0 • Были ваши, стали наши"
+          }
+        }
+      }
+    },
+    "onboarding_title" : {
+      "comment" : "Онбординг. Хидер",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to the Naebank"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в Naebank"
+          }
+        }
+      }
+    },
+    "placeholder_password" : {
+      "comment" : "Регистрация. Наименование плейсхолдера для ввода пароля",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PASSWORD"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ПАРОЛЬ"
+          }
+        }
+      }
+    },
+    "placeholder_phone_number" : {
+      "comment" : "Регистрация. Наименование плейсхолдера для ввода телефона",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PHONE NUMBER"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "НОМЕР ТЕЛЕФОНА"
+          }
+        }
+      }
+    },
+    "register_button" : {
+      "comment" : "Кнопка «Создать аккаунт»",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Register"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зарегистрироваться"
+          }
+        }
+      }
+    },
+    "register_credentials_save_failed" : {
+      "comment" : "Регистрация. Не удалось сохранить данные",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to save data. Please try again."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка при сохранении данных. Пожалуйста, попробуйте снова."
+          }
+        }
+      }
+    },
+    "register_have_profile" : {
+      "comment" : "Регистрация. Если уже есть профиль",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Already have a profile?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уже есть профиль?"
+          }
+        }
+      }
+    },
+    "register_password_descr" : {
+      "comment" : "Регистрация. Описание плейсхолдера для ввода пароля",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "At least 8 characters, including digits."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Минимум 8 символов, включая цифры."
+          }
+        }
+      }
+    },
+    "register_password_not_entered" : {
+      "comment" : "Регистрация. Пароль не введён",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password not entered."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль не введён."
+          }
+        }
+      }
+    },
+    "register_password_requirements_not_met" : {
+      "comment" : "Регистрация. Пароль не соответствует правилам (длина и цифра)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password must be at least 8 characters long and contain one digit."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароль должен содержать минимум 8 символов и хотя бы одну цифру."
+          }
+        }
+      }
+    },
+    "register_passwords_do_not_match" : {
+      "comment" : "Регистрация. Пароли не совпадают",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The passwords do not match."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пароли не совпадают."
+          }
+        }
+      }
+    },
+    "register_phone_already_registered" : {
+      "comment" : "Регистрация. Номер телефона уже зарегистрирован",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This phone number is already registered."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Этот номер телефона уже зарегистрирован."
+          }
+        }
+      }
+    },
+    "register_phone_descr" : {
+      "comment" : "Регистрация. Описание для плейсхолдера с телефоном",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "We will send a SMS for confirmation"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Мы отправим смс для подтверждения"
+          }
+        }
+      }
+    },
+    "register_phone_not_entered" : {
+      "comment" : "Регистрация. Номер телефона не введён",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Phone number not entered."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Номер телефона не введён."
+          }
+        }
+      }
+    },
+    "register_repeat_password" : {
+      "comment" : "Регистрация. Наименование плейсхолдера для повторного ввода пароля",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "RE-ENTER THE PASSWORD"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ПОВТОРИТЕ ПАРОЛЬ"
+          }
+        }
+      }
+    },
+    "register_repeat_password_descr" : {
+      "comment" : "Регистрация. Описание плейсхолдера для повторного ввода пароля",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Repeat the password above."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повторите пароль, введенный выше."
+          }
+        }
+      }
+    },
+    "register_repeat_password_not_entered" : {
+      "comment" : "Регистрация. Повтор пароля не введён",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Password reset not entered."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Повтор пароля не введён."
+          }
+        }
+      }
+    },
+    "register_subtitle" : {
+      "comment" : "Регистрация. Описание",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Enter the data to gain access to your finances in one place."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заполните данные для доступа к вашим финансам в одно касание."
+          }
+        }
+      }
+    },
+    "register_terms" : {
+      "comment" : "Регистрация. Текст согласия с условиями (без символа ☐/☑; префикс добавляется в коде)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "I accept the Terms of Use and agree to the processing of personal data"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Я принимаю Условия использования и согласен на обработку персональных данных"
+          }
+        }
+      }
+    },
+    "register_terms_not_accepted" : {
+      "comment" : "Регистрация. Условия использования не приняты",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You must accept the terms of use."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы должны принять условия использования."
+          }
+        }
+      }
+    },
+    "register_title" : {
+      "comment" : "Регистрация. Хидер",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : " Create an account"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать аккаунт"
+          }
+        }
+      }
+    },
+    "settings" : {
+      "comment" : "Настройки",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
+    },
+    "settings_dark_theme" : {
+      "comment" : "Настройки. Тёмная тема",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Dark"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тёмная"
+          }
+        }
+      }
+    },
+    "settings_get_notification_toggle" : {
+      "comment" : "Настройки. Получение уведомлений",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Receive notification"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Получать уведомления"
+          }
+        }
+      }
+    },
+    "settings_light_theme" : {
+      "comment" : "Настройки. Светлая тема",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Light"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Светлая"
+          }
+        }
+      }
+    },
+    "settings_notification_message1" : {
+      "comment" : "Тест уведомления 1",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💰 Your account has been replenished by 1,000,000 BYN (in the dream)"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💰 Ваш счет пополнился на 1 000 000 BYN (во сне)"
+          }
+        }
+      }
+    },
+    "settings_notification_message2" : {
+      "comment" : "Тест уведомления 2",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔔 This notification is the only thing you can afford for free"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔔 Это уведомление — единственное, что вы можете позволить себе бесплатно"
+          }
+        }
+      }
+    },
+    "settings_notification_message3" : {
+      "comment" : "Тест уведомления 3",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💸 Inflation got away, but will you keep up?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💸 Инфляция убежала, но вы успеете за ней?"
+          }
+        }
+      }
+    },
+    "settings_notification_message4" : {
+      "comment" : "Тест уведомления 4",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🏦 We’ll keep your money, but we don’t promise not to mess with it"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🏦 Мы сохраним ваши деньги, но не обещаем, что не пошутим над ними"
+          }
+        }
+      }
+    },
+    "settings_notification_message5" : {
+      "comment" : "Текст уведомления 5",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💰 Your money is in good hands!"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "💰 Ваши финансы в надежных руках!"
+          }
+        }
+      }
+    },
+    "settings_notification_off" : {
+      "comment" : "Уведомления отключены",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notifications are disabled"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уведомления отключены"
+          }
+        }
+      }
+    },
+    "settings_notification_permission" : {
+      "comment" : "Настройки. Разрешение на уведомления",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Allow notifications in the device settings to receive daily notifications"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разрешите уведомления в настройках устройства, чтобы получать ежедневные уведомления"
+          }
+        }
+      }
+    },
+    "settings_sure_off" : {
+      "comment" : "Настройки. Точно хотите выйти?",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Are you sure you want to leave?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вы уверены, что хотите выйти?"
+          }
+        }
+      }
+    },
+    "settings_system_theme" : {
+      "comment" : "Настройки. Системная тема",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "System"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Системная"
+          }
+        }
+      }
+    },
+    "settings_theme_title" : {
+      "comment" : "Настройки. Тема оформления",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Design theme"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тема оформления"
+          }
+        }
+      }
+    },
+    "settings_title" : {
+      "comment" : "Настройки. Заголовок",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Settings"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
+    },
+    "settings_want_off" : {
+      "comment" : "Настройки. Хотите выйти?",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Log out of the app?"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Выйти из приложения?"
+          }
+        }
+      }
+    },
+    "settings_yes_off" : {
+      "comment" : "Настройки. Да, выйти",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Yes, go out"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Да, выйти"
+          }
+        }
+      }
+    },
+    "tabbar_main" : {
+      "comment" : "Таббар. Главная",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Главная"
+          }
+        }
+      }
+    },
+    "tabbar_setups" : {
+      "comment" : "Таббар. Настройки",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Setups"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.1"
+}
