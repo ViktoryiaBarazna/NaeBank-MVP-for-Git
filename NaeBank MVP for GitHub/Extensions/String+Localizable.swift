@@ -1,5 +1,5 @@
 //
-//  LocalizedExtension.swift
+//  String+Localizable.swift
 //  NaeBank
 //
 //  Created by Виктория Дисбаланс on 12.05.26.

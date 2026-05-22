@@ -40,7 +40,6 @@ final class SettingsViewController: UIViewController {
         super.viewDidLoad()
         setupViewProperties()
         setupSubviews()
-//        setupConstraints()
         setupConstraintsSnapKit()
         presenter?.viewDidLoad()
     }
@@ -90,34 +89,6 @@ final class SettingsViewController: UIViewController {
         }
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//            containerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-//            containerView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 16),
-//            containerView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -16),
-//
-//            themeLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 16),
-//            themeLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
-//            themeLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-//
-//            segmentControl.topAnchor.constraint(equalTo: themeLabel.bottomAnchor, constant: 12),
-//            segmentControl.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
-//            segmentControl.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-//
-//            notificationsLabel.topAnchor.constraint(equalTo: segmentControl.bottomAnchor, constant: 24),
-//            notificationsLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 16),
-//
-//            notificationsSwitch.centerYAnchor.constraint(equalTo: notificationsLabel.centerYAnchor),
-//            notificationsSwitch.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -16),
-//            notificationsSwitch.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -16),
-//
-//            logoutButton.topAnchor.constraint(greaterThanOrEqualTo: containerView.bottomAnchor, constant: 24),
-//            logoutButton.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 80),
-//            logoutButton.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -80),
-//            logoutButton.heightAnchor.constraint(equalToConstant: 50),
-//            logoutButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -80),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
         containerView.snp.makeConstraints {

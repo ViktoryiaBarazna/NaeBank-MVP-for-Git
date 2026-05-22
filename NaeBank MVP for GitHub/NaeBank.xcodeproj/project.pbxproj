@@ -30,19 +30,9 @@
 			path = AppSettings;
 			sourceTree = "<group>";
 		};
-		D395710B2FB474AA0075BBDF /* LocalizableExtension */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = LocalizableExtension;
-			sourceTree = "<group>";
-		};
 		D3A982242F7D913A009356E5 /* Onboarding */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = Onboarding;
-			sourceTree = "<group>";
-		};
-		D3B4EF332FA0EC0500DECC99 /* ThemeExtension */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ThemeExtension;
 			sourceTree = "<group>";
 		};
 		D3BF43CE2F793F04002AB13B /* NaeBank */ = {
@@ -56,6 +46,11 @@
 		D3C624B82FA6542F0052F03E /* MainPageScreens */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MainPageScreens;
+			sourceTree = "<group>";
+		};
+		D3E5A1002F793F04002AB13B /* Extensions */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,10 +70,9 @@
 		D3BF43C32F793F04002AB13B = {
 			isa = PBXGroup;
 			children = (
-				D395710B2FB474AA0075BBDF /* LocalizableExtension */,
+				D3E5A1002F793F04002AB13B /* Extensions */,
 				D3571FF82FA927C9002BD695 /* AppSettings */,
 				D3C624B82FA6542F0052F03E /* MainPageScreens */,
-				D3B4EF332FA0EC0500DECC99 /* ThemeExtension */,
 				D3A982242F7D913A009356E5 /* Onboarding */,
 				D3BF43CE2F793F04002AB13B /* NaeBank */,
 				D3BF43CD2F793F04002AB13B /* Products */,
@@ -111,11 +105,10 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D3571FF82FA927C9002BD695 /* AppSettings */,
-				D395710B2FB474AA0075BBDF /* LocalizableExtension */,
 				D3A982242F7D913A009356E5 /* Onboarding */,
-				D3B4EF332FA0EC0500DECC99 /* ThemeExtension */,
 				D3BF43CE2F793F04002AB13B /* NaeBank */,
 				D3C624B82FA6542F0052F03E /* MainPageScreens */,
+				D3E5A1002F793F04002AB13B /* Extensions */,
 			);
 			name = NaeBank;
 			packageProductDependencies = (

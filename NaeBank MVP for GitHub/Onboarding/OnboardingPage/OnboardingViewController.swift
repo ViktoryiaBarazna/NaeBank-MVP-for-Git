@@ -44,7 +44,6 @@ final class OnboardingViewController: UIViewController {
         super.viewDidLoad()
         setupDefaultBackground()
         setupSubViews()
-//        setupConstraints()
         setupConstraintsSnapKit()
         attributedGreetingTitleLabel()
     }
@@ -116,41 +115,6 @@ final class OnboardingViewController: UIViewController {
         view.addSubview(footerLabel)
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//            // ScrollView: сверху — safe area, по бокам — к view, снизу — к верху footerLabel
-//            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-//            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-//            scrollView.bottomAnchor.constraint(equalTo: footerLabel.topAnchor, constant: -20),
-//
-//            // ContentView внутри ScrollView
-//            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-//            contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-//            contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-//            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-//            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-//
-//            // StackView внутри ContentView
-//            stackView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20),
-//            stackView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
-//            stackView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
-//            stackView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
-//
-//            imageView.heightAnchor.constraint(equalToConstant: 325),
-//            imageView.widthAnchor.constraint(equalToConstant: 200),
-//
-//            loginButton.widthAnchor.constraint(equalToConstant: 180),
-//            loginButton.heightAnchor.constraint(equalToConstant: 50),
-//
-//            registerButton.widthAnchor.constraint(equalToConstant: 180),
-//            registerButton.heightAnchor.constraint(equalToConstant: 50),
-//
-//            footerLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-//            footerLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-//            footerLabel.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
         scrollView.snp.makeConstraints {

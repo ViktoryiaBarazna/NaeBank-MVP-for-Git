@@ -35,7 +35,6 @@ final class AfterRegisterViewController: UIViewController {
         super.viewDidLoad()
         setupDefaultBackground()
         setupSubViews()
-        //        setupConstraints()
         setupConstraintsSnapKit()
         attributedLabel()
 
@@ -68,23 +67,6 @@ final class AfterRegisterViewController: UIViewController {
         }
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//            label.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 50),
-//            label.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-//            label.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-//
-//            imageView.topAnchor.constraint(equalTo: label.bottomAnchor, constant: 40),
-//            imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            imageView.widthAnchor.constraint(equalToConstant: 150),
-//            imageView.heightAnchor.constraint(equalToConstant: 300),
-//
-//            loginButton.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 80),
-//            loginButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            loginButton.heightAnchor.constraint(equalToConstant: 60),
-//            loginButton.widthAnchor.constraint(equalToConstant: 220),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
         label.snp.makeConstraints {

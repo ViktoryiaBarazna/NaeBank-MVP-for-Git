@@ -42,7 +42,6 @@ final class ExchangeRatesMainViewController: UIViewController {
         setupDefaultBackground()
         setupViewProperties()
         setupSubViews()
-        //        setupConstraints()
         setupConstraintsSnapKit()
 
         // Автоматическая загрузка данных при запуске
@@ -89,22 +88,6 @@ final class ExchangeRatesMainViewController: UIViewController {
         [activityIndicator, tableView, errorLabel].forEach { view.addSubview($0) }
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//
-//            activityIndicator.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-//            activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//
-//            errorLabel.topAnchor.constraint(equalTo: activityIndicator.bottomAnchor, constant: 40),
-//            errorLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-//            errorLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-//
-//            tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 40),
-//            tableView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 10),
-//            tableView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -10),
-//            tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -30),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
         activityIndicator.snp.makeConstraints {

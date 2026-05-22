@@ -39,7 +39,6 @@ final class MainPageViewController: UIViewController {
         super.viewDidLoad()
         setupDefaultBackground()
         setupSubViews()
-//        setupConstraints()
         setupConstraintsSnapKit()
     }
 
@@ -85,32 +84,6 @@ final class MainPageViewController: UIViewController {
         }
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//
-//            titleLabel.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor, constant: 20),
-//            titleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-//            titleLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-//
-//            ratesLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 80),
-//            ratesLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-//            ratesLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-//
-//            ratesButton.topAnchor.constraint(equalTo: ratesLabel.bottomAnchor, constant: 40),
-//            ratesButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            ratesButton.heightAnchor.constraint(equalToConstant: 50),
-//            ratesButton.widthAnchor.constraint(equalToConstant: 160),
-//
-//            newsLabel.topAnchor.constraint(equalTo: ratesButton.bottomAnchor, constant: 80),
-//            newsLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 40),
-//            newsLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -40),
-//
-//            newsButton.topAnchor.constraint(equalTo: newsLabel.bottomAnchor, constant: 40),
-//            newsButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-//            newsButton.heightAnchor.constraint(equalToConstant: 50),
-//            newsButton.widthAnchor.constraint(equalToConstant: 160),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
         titleLabel.snp.makeConstraints {

@@ -21,7 +21,6 @@ final class ExchangeRatesCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setupSubviews()
-//        setupConstraints()
         setupConstraintsSnapKit()
     }
 
@@ -70,22 +69,6 @@ final class ExchangeRatesCell: UITableViewCell {
         contentView.addSubview(containerView)
     }
 
-//    private func setupConstraints() {
-//        NSLayoutConstraint.activate([
-//            containerView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
-//            containerView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 16),
-//            containerView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -16),
-//            containerView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-//
-//            horizontalStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 12),
-//            horizontalStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 12),
-//            horizontalStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -12),
-//            horizontalStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -12),
-//
-//            avatarImageView.widthAnchor.constraint(equalToConstant: 50),
-//            avatarImageView.heightAnchor.constraint(equalToConstant: 50),
-//        ])
-//    }
 
     private func setupConstraintsSnapKit() {
 

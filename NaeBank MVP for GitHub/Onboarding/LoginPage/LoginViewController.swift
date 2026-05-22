@@ -51,21 +51,16 @@ final class LoginViewController: UIViewController {
         super.viewDidLoad()
         setupCustomBackground()
         setupSubViews()
-        //        setupConstraints()
         setupConstraintsSnapKit()
         setupTextFieldDelegate()
     }
 
     // MARK: - Layout
     private func setupCustomBackground() {
-        view.backgroundColor = .systemBackground
-        let tap = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
-        tap.cancelsTouchesInView = false
-        view.addGestureRecognizer(tap)
+        setupDefaultBackground()
+        setupDismissKeyboardOnTap()
     }
-    
-    @objc private func dismissKeyboard() { view.endEditing(true) }
-    
+
     private func setupSubViews() {
         titleLabel.text = "login_title".localized
         titleLabel.font = UIFont.systemFont(ofSize: 32, weight: .bold)
@@ -153,8 +148,8 @@ final class LoginViewController: UIViewController {
         securityStack.alignment = .center
         securityStack.distribution = .equalSpacing
         
-        addLeftIcon(textField: phoneTextField, iconName: "phone")
-        addLeftIcon(textField: passwordTextField, iconName: "lock")
+        phoneTextField.setLeftIcon(systemName: "phone", tintColor: .systemPurple)
+        passwordTextField.setLeftIcon(systemName: "lock", tintColor: .systemPurple)
         
         [scrollView, contentView, securityStack].forEach {
             $0.translatesAutoresizingMaskIntoConstraints = false
@@ -175,69 +170,6 @@ final class LoginViewController: UIViewController {
         }
     }
     
-    //    private func setupConstraints() {
-    //        NSLayoutConstraint.activate([
-    //            scrollView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-    //            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-    //            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-    //            scrollView.bottomAnchor.constraint(equalTo: securityStack.topAnchor, constant: -20),
-    //
-    //            contentView.topAnchor.constraint(equalTo: scrollView.topAnchor),
-    //            contentView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor),
-    //            contentView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor),
-    //            contentView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor),
-    //            contentView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-    //
-    //            securityStack.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20),
-    //            securityStack.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20),
-    //            securityStack.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -10),
-    //
-    //            titleLabel.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 40),
-    //            titleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            titleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            subTitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 20),
-    //            subTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            subTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            phoneTitleLabel.topAnchor.constraint(equalTo: subTitleLabel.bottomAnchor, constant: 70),
-    //            phoneTitleLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            phoneTitleLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            phoneTextField.topAnchor.constraint(equalTo: phoneTitleLabel.bottomAnchor, constant: 10),
-    //            phoneTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            phoneTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //            phoneTextField.heightAnchor.constraint(equalToConstant: 60),
-    //
-    //            phoneHintLabel.topAnchor.constraint(equalTo: phoneTextField.bottomAnchor, constant: 10),
-    //            phoneHintLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            phoneHintLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            passwordLabel.topAnchor.constraint(equalTo: phoneHintLabel.bottomAnchor, constant: 40),
-    //            passwordLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            passwordLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            passwordTextField.topAnchor.constraint(equalTo: passwordLabel.bottomAnchor, constant: 10),
-    //            passwordTextField.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            passwordTextField.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //            passwordTextField.heightAnchor.constraint(equalToConstant: 60),
-    //
-    //            passwordHintLabel.topAnchor.constraint(equalTo: passwordTextField.bottomAnchor, constant: 10),
-    //            passwordHintLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 20),
-    //            passwordHintLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-    //
-    //            loginButton.topAnchor.constraint(equalTo: passwordHintLabel.bottomAnchor, constant: 50),
-    //            loginButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-    //            loginButton.heightAnchor.constraint(equalToConstant: 60),
-    //            loginButton.widthAnchor.constraint(equalToConstant: 220),
-    //
-    //            registerButton.topAnchor.constraint(equalTo: loginButton.bottomAnchor, constant: 30),
-    //            registerButton.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-    //            registerButton.heightAnchor.constraint(equalToConstant: 60),
-    //            registerButton.widthAnchor.constraint(equalToConstant: 220),
-    //            registerButton.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -20),
-    //        ])
-    //    }
     
     private func setupConstraintsSnapKit() {
         scrollView.snp.makeConstraints {
@@ -315,21 +247,7 @@ final class LoginViewController: UIViewController {
             $0.bottom.equalTo(contentView).offset(-20)
         }
     }
-    
-    private func addLeftIcon(textField: UITextField, iconName: String) {
-        let iconImageView = UIImageView(frame: CGRect(x: 10, y: 10, width: 20, height: 20))
-        iconImageView.image = UIImage(systemName: iconName)
-        iconImageView.contentMode = .scaleAspectFit
-        iconImageView.tintColor = .systemPurple
-        
-        let iconContainer = UIView(frame: CGRect(x: 0, y: 0, width: 40, height: 44))
-        iconContainer.isUserInteractionEnabled = false
-        iconContainer.addSubview(iconImageView)
-        
-        textField.leftView = iconContainer
-        textField.leftViewMode = .always
-    }
-    
+
     private func setupTextFieldDelegate() {
         phoneTextField.delegate = self
         passwordTextField.delegate = self
