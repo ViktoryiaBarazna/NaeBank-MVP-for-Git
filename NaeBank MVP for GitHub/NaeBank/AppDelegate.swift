@@ -7,14 +7,16 @@
 
 import UIKit
 import UserNotifications
+import FirebaseCore
 
-@main class AppDelegate: UIResponder, UIApplicationDelegate {
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
-        // Устанавливаем делегат для показа уведомлений в активном приложении
+        FirebaseApp.configure()
         UNUserNotificationCenter.current().delegate = self
         return true
     }

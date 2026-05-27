@@ -20,4 +20,15 @@ final class RegisterRouter: RegisterRouterProtocol {
         let loginVC = LoginViewController.build()
         viewController?.navigationController?.pushViewController(loginVC, animated: true)
     }
+
+    func showMainPage() {
+        guard
+            let window = viewController?.view.window
+                ?? viewController?.navigationController?.view.window
+        else { return }
+        let tabBarVC = MainTabBarViewController()
+        UIView.transition(
+            with: window, duration: 0.35, options: .transitionCrossDissolve,
+            animations: { window.rootViewController = tabBarVC })
+    }
 }

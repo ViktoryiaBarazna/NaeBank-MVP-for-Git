@@ -50,10 +50,8 @@ final class AfterRegisterViewController: UIViewController {
         label.textAlignment = .center
         label.textColor = .label
 
-        imageView.image = (UIImage(named: "logo_2"))
-        imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 10
-        imageView.clipsToBounds = true
+        imageView.image = UIImage(named: "start_logo")
+        imageView.contentMode = .scaleAspectFit
 
         loginButton.setTitle("login_button".localized, for: .normal)
         loginButton.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: .bold)

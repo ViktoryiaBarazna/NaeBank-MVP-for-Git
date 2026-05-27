@@ -5,17 +5,24 @@
 //  Created by Виктория Дисбаланс on 10.05.26.
 //
 
-import Foundation
+import GoogleSignIn
+import UIKit
 
 final class LoginPresenter: LoginPresenterProtocol {
 
     weak var view: LoginViewProtocol?
     var router: LoginRouterProtocol
     private let loginService: LoginServiceProtocol
+    private let googleAuthService: GoogleAuthServiceProtocol
 
-    init(router: LoginRouterProtocol, loginService: LoginServiceProtocol) {
+    init(
+        router: LoginRouterProtocol,
+        loginService: LoginServiceProtocol,
+        googleAuthService: GoogleAuthServiceProtocol
+    ) {
         self.router = router
         self.loginService = loginService
+        self.googleAuthService = googleAuthService
     }
 
     func loginButtonDidTapped(phone: String?, password: String?) {
@@ -43,6 +50,28 @@ final class LoginPresenter: LoginPresenterProtocol {
 
         case .loginFailed:
             view?.showAlert(title: "error".localized, message: "login_data_load_failed".localized)
+        }
+    }
+
+    func googleButtonTapped(presentingViewController: UIViewController) {
+        googleAuthService.signIn(presentingViewController: presentingViewController) { [weak self] result in
+            DispatchQueue.main.async {
+                guard let self else { return }
+                switch result {
+                case .success:
+                    self.router.showMainPage()
+                case .failure(let error):
+                    let nsError = error as NSError
+                    if nsError.domain == GIDSignInError.errorDomain,
+                       nsError.code == GIDSignInError.canceled.rawValue
+                    {
+                        return
+                    }
+                    self.view?.showAlert(
+                        title: "error".localized,
+                        message: error.localizedDescription)
+                }
+            }
         }
     }
 

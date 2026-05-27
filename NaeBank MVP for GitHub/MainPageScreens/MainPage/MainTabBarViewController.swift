@@ -75,19 +75,25 @@ final class MainTabBarViewController: UITabBarController {
 
     private func setupTabs() {
         let mainVC = MainPageViewController.build()
+        let mapsVC = MapsViewController.build()
         let setupVC = SettingsViewController.build()
 
         let mainNav = UINavigationController(rootViewController: mainVC)
+        let mapsNav = UINavigationController(rootViewController: mapsVC)
         let setupNav = UINavigationController(rootViewController: setupVC)
 
         mainNav.tabBarItem = UITabBarItem(
             title: "tabbar_main".localized, image: UIImage(systemName: "house"),
             selectedImage: UIImage(systemName: "house.fill"))
 
+        mapsNav.tabBarItem = UITabBarItem(
+            title: "tabbar_maps".localized, image: UIImage(systemName: "map"),
+            selectedImage: UIImage(systemName: "map.fill"))
+
         setupNav.tabBarItem = UITabBarItem(
             title: "tabbar_setups".localized, image: UIImage(systemName: "gear"),
             selectedImage: UIImage(systemName: "gear.fill"))
 
-        viewControllers = [mainNav, setupNav]
+        viewControllers = [mainNav, mapsNav, setupNav]
     }
 }

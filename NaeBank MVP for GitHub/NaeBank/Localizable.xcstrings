@@ -271,6 +271,24 @@
         }
       }
     },
+    "login_with_google" : {
+      "comment" : "Подпись над кнопкой входа через Google",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign in with Google"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Войти через Google"
+          }
+        }
+      }
+    },
     "login_data_load_failed" : {
       "comment" : "Логин. Не удалось загрузить данные",
       "extractionState" : "manual",
@@ -825,6 +843,24 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Зарегистрироваться"
+          }
+        }
+      }
+    },
+    "register_with_google" : {
+      "comment" : "Подпись над кнопкой регистрации через Google",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Sign up with Google"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Зарегистрироваться через Google"
           }
         }
       }
@@ -1437,6 +1473,96 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Главная"
+          }
+        }
+      }
+    },
+    "tabbar_maps" : {
+      "comment" : "Таббар. Карты",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maps"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Карты"
+          }
+        }
+      }
+    },
+    "maps_branch_business" : {
+      "comment" : "Карты. Тип отделения — бизнес",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For legal entities"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для юридических лиц"
+          }
+        }
+      }
+    },
+    "maps_branch_individual" : {
+      "comment" : "Карты. Тип отделения — физлица",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For individuals"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для физических лиц"
+          }
+        }
+      }
+    },
+    "maps_zoom_in" : {
+      "comment" : "Карты. Кнопка приближения",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔍 Zoom +"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔍 Приблизить"
+          }
+        }
+      }
+    },
+    "maps_zoom_out" : {
+      "comment" : "Карты. Кнопка отдаления",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔎 Zoom -"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "🔎 Отдалить"
           }
         }
       }

@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		D33337CB2FB7A715008AC633 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D33337CA2FB7A715008AC633 /* SnapKit */; };
+		D3F101012FB80001008AC633 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = D3F101042FB80001008AC633 /* FirebaseAuth */; };
+		D3F101022FB80001008AC633 /* FirebaseCore in Frameworks */ = {isa = PBXBuildFile; productRef = D3F101052FB80001008AC633 /* FirebaseCore */; };
+		D3F101032FB80001008AC633 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = D3F101062FB80001008AC633 /* GoogleSignIn */; };
+		D3F102012FB80002008AC633 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3F102042FB80002008AC633 /* FirebaseAnalytics */; };
+		D3F102022FB80002008AC633 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = D3F102052FB80002008AC633 /* FirebaseCrashlytics */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +33,11 @@
 		D3571FF82FA927C9002BD695 /* AppSettings */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AppSettings;
+			sourceTree = "<group>";
+		};
+		D381A1E22FC1F69900E49A50 /* MapsPage */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MapsPage;
 			sourceTree = "<group>";
 		};
 		D3A982242F7D913A009356E5 /* Onboarding */ = {
@@ -61,6 +71,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D33337CB2FB7A715008AC633 /* SnapKit in Frameworks */,
+				D3F101012FB80001008AC633 /* FirebaseAuth in Frameworks */,
+				D3F101022FB80001008AC633 /* FirebaseCore in Frameworks */,
+				D3F101032FB80001008AC633 /* GoogleSignIn in Frameworks */,
+				D3F102012FB80002008AC633 /* FirebaseAnalytics in Frameworks */,
+				D3F102022FB80002008AC633 /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +87,7 @@
 			children = (
 				D3E5A1002F793F04002AB13B /* Extensions */,
 				D3571FF82FA927C9002BD695 /* AppSettings */,
+				D381A1E22FC1F69900E49A50 /* MapsPage */,
 				D3C624B82FA6542F0052F03E /* MainPageScreens */,
 				D3A982242F7D913A009356E5 /* Onboarding */,
 				D3BF43CE2F793F04002AB13B /* NaeBank */,
@@ -98,6 +114,7 @@
 				D3BF43C92F793F04002AB13B /* Frameworks */,
 				D3BF43CA2F793F04002AB13B /* Resources */,
 				D3332C0A2FB76EF9008AC633 /* SwiftLint */,
+				D3F1030A2FB80003008AC633 /* Crashlytics */,
 			);
 			buildRules = (
 			);
@@ -105,6 +122,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				D3571FF82FA927C9002BD695 /* AppSettings */,
+				D381A1E22FC1F69900E49A50 /* MapsPage */,
 				D3A982242F7D913A009356E5 /* Onboarding */,
 				D3BF43CE2F793F04002AB13B /* NaeBank */,
 				D3C624B82FA6542F0052F03E /* MainPageScreens */,
@@ -113,6 +131,11 @@
 			name = NaeBank;
 			packageProductDependencies = (
 				D33337CA2FB7A715008AC633 /* SnapKit */,
+				D3F101042FB80001008AC633 /* FirebaseAuth */,
+				D3F101052FB80001008AC633 /* FirebaseCore */,
+				D3F101062FB80001008AC633 /* GoogleSignIn */,
+				D3F102042FB80002008AC633 /* FirebaseAnalytics */,
+				D3F102052FB80002008AC633 /* FirebaseCrashlytics */,
 			);
 			productName = NaeBank;
 			productReference = D3BF43CC2F793F04002AB13B /* NaeBank.app */;
@@ -146,6 +169,8 @@
 			packageReferences = (
 				D3332B2C2FB76247008AC633 /* XCRemoteSwiftPackageReference "SwiftLint" */,
 				D33337C92FB7A715008AC633 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				D3F101082FB80001008AC633 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D3BF43CD2F793F04002AB13B /* Products */;
@@ -188,6 +213,31 @@
 			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]\nthen\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\nif command -v swiftlint >/dev/null 2>&1\nthen\n    swiftlint\nelse\n    echo \"warning: `swiftlint` command not found - See https://github.com/realm/SwiftLint#installation for installation instructions.\"\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		D3F1030A2FB80003008AC633 /* Crashlytics */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${PRODUCT_NAME}",
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Info.plist",
+				"$(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/GoogleService-Info.plist",
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_PATH)",
+			);
+			name = Crashlytics;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${BUILD_DIR%/Build/*}/SourcePackages/checkouts/firebase-ios-sdk/Crashlytics/run\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -216,6 +266,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -249,6 +300,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,7 +354,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 6DH7FFTKA9;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -432,6 +484,22 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 11.0.0;
+			};
+		};
+		D3F101082FB80001008AC633 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -439,6 +507,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D33337C92FB7A715008AC633 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D3F101042FB80001008AC633 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		D3F101052FB80001008AC633 /* FirebaseCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCore;
+		};
+		D3F101062FB80001008AC633 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F101082FB80001008AC633 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		D3F102042FB80002008AC633 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		D3F102052FB80002008AC633 /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D3F101072FB80001008AC633 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import FirebaseAnalytics
 
 final class MainPageViewController: UIViewController {
 
@@ -117,10 +118,16 @@ final class MainPageViewController: UIViewController {
     // MARK: - Actions
 
     @objc private func ratesButtonTapped() {
+//        fatalError()
         presenter?.exchangeRatesDidTapped()
+
+        Analytics.logEvent("Главный_экран", parameters: ["Нажал на кнопку просмотра курсов валют": true])
     }
 
     @objc private func newsUpButtonTapped() {
+//        fatalError()
         presenter?.newsDidTapped()
+
+        Analytics.logEvent("Главный_экран", parameters: ["Нажал на кнопку просмотра новостей": true])
     }
 }

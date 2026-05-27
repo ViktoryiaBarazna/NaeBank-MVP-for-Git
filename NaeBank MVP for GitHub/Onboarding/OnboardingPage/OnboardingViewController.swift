@@ -64,9 +64,7 @@ final class OnboardingViewController: UIViewController {
         descriptionTitleLabel.numberOfLines = 0
 
         imageView.image = UIImage(named: "start_logo")
-        imageView.contentMode = .scaleAspectFill
-        imageView.layer.cornerRadius = 10
-        imageView.clipsToBounds = true
+        imageView.contentMode = .scaleAspectFit
 
         functionDescriptionLabel.text = "onboarding_descr_subtitle2".localized
         functionDescriptionLabel.font = UIFont.systemFont(ofSize: 12)

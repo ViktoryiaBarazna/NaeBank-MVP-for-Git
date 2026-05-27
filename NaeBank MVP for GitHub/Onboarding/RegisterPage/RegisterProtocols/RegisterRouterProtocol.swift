@@ -10,4 +10,5 @@ import Foundation
 protocol RegisterRouterProtocol: AnyObject {
     func showAfterRegisterScreen()
     func showLoginScreen()
+    func showMainPage()
 }

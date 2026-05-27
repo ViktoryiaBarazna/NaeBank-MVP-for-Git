@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import GoogleSignIn
 
 final class RegisterViewController: UIViewController {
 
@@ -29,6 +30,8 @@ final class RegisterViewController: UIViewController {
     private let termsButton = UIButton(type: .system)
     private var termsAccepted = false
     private let registerButton = UIButton(type: .system)
+    private let googleTitleLabel = UILabel()
+    private let googleButton = GIDSignInButton()
     private let hasProfileLabel = UILabel()
     private let loginButton = UIButton(type: .system)
     private let securityLabel = UILabel()
@@ -37,8 +40,12 @@ final class RegisterViewController: UIViewController {
     static func build() -> UIViewController {
         let keychainStore = RegisterKeychainStore()
         let registrationService = RegistrationService(keychain: keychainStore)
+        let googleAuthService = GoogleAuthService()
         let router = RegisterRouter()
-        let presenter = RegisterPresenter(router: router, registrationService: registrationService)
+        let presenter = RegisterPresenter(
+            router: router,
+            registrationService: registrationService,
+            googleAuthService: googleAuthService)
         let vc = RegisterViewController()
 
         router.viewController = vc
@@ -150,6 +157,18 @@ final class RegisterViewController: UIViewController {
         registerButton.layer.shadowOpacity = 0
         registerButton.addTarget(self, action: #selector(registerButtonTapped), for: .touchUpInside)
 
+        googleTitleLabel.text = "register_with_google".localized
+        googleTitleLabel.font = UIFont.systemFont(ofSize: 12)
+        googleTitleLabel.textColor = .secondaryLabel
+        googleTitleLabel.numberOfLines = 0
+        googleTitleLabel.textAlignment = .center
+
+        googleButton.style = .iconOnly
+        googleButton.colorScheme = .light
+        googleButton.layer.cornerRadius = 24
+        googleButton.layer.masksToBounds = true
+        googleButton.addTarget(self, action: #selector(googleButtonTapped), for: .touchUpInside)
+
         hasProfileLabel.text = "register_have_profile".localized
         hasProfileLabel.font = .systemFont(ofSize: 12)
         hasProfileLabel.textColor = .secondaryLabel
@@ -179,7 +198,7 @@ final class RegisterViewController: UIViewController {
 
         [titleLabel, subTitleLabel, phoneTitleLabel, phoneTextField, phoneHintLabel,
          passwordLabel, passwordTextField, repeatPasswordLabel, repeatPasswordTextField,
-         termsButton, registerButton, hasProfileLabel, loginButton,
+         termsButton, registerButton, googleTitleLabel, googleButton, hasProfileLabel, loginButton,
         ].forEach {
             contentView.addSubview($0)
         }
@@ -262,8 +281,19 @@ final class RegisterViewController: UIViewController {
             $0.size.equalTo(CGSize(width: 220, height: 60))
         }
 
+        googleTitleLabel.snp.makeConstraints {
+            $0.top.equalTo(registerButton.snp.bottom).offset(16)
+            $0.leading.trailing.equalTo(contentView).inset(20)
+        }
+
+        googleButton.snp.makeConstraints {
+            $0.top.equalTo(googleTitleLabel.snp.bottom).offset(8)
+            $0.centerX.equalTo(contentView)
+            $0.size.equalTo(48)
+        }
+
         hasProfileLabel.snp.makeConstraints {
-            $0.top.equalTo(registerButton.snp.bottom).offset(20)
+            $0.top.equalTo(googleButton.snp.bottom).offset(20)
             $0.leading.trailing.equalTo(contentView).inset(20)
         }
 
@@ -298,6 +328,10 @@ final class RegisterViewController: UIViewController {
         presenter?.registerTapped(
             phone: phoneTextField.text, password: passwordTextField.text,
             repeatPassword: repeatPasswordTextField.text, termsAccepted: termsAccepted)
+    }
+
+    @objc private func googleButtonTapped() {
+        presenter?.googleButtonTapped(presentingViewController: self)
     }
 
     @objc private func loginButtonTapped() { presenter?.loginButtonDidTapped() }
