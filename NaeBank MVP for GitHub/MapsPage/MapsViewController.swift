@@ -18,7 +18,12 @@ final class MapsViewController: UIViewController {
     private let mapView = MKMapView()
     private let controlPanel = UIView()
     private let stackView = UIStackView()
-    private let mapTypeSegment = UISegmentedControl(items: ["Схема", "Спутник", "Гибрид"])
+    private let mapTypeSegment = UISegmentedControl(items: [
+        "maps_map_type_standard".localized,
+        "maps_map_type_satellite".localized,
+        "maps_map_type_hybrid".localized
+    ])
+    private let zoomStack = UIStackView()
     private let zoomInButton = UIButton(type: .system)
     private let zoomOutButton = UIButton(type: .system)
 
@@ -79,7 +84,6 @@ final class MapsViewController: UIViewController {
         mapTypeSegment.selectedSegmentIndex = 0
         mapTypeSegment.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
 
-        let zoomStack = UIStackView()
         zoomStack.axis = .horizontal
         zoomStack.spacing = 8
         zoomStack.distribution = .fillEqually
@@ -114,12 +118,9 @@ final class MapsViewController: UIViewController {
         errorLabel.numberOfLines = 0
         errorLabel.isHidden = true
 
-        view.addSubview(mapView)
-        view.addSubview(loadingOverlay)
+        [mapView, loadingOverlay, controlPanel, errorLabel].forEach { view.addSubview($0)}
         loadingOverlay.addSubview(activityIndicator)
-        view.addSubview(controlPanel)
         controlPanel.addSubview(stackView)
-        view.addSubview(errorLabel)
     }
 
     private func setupConstraintsSnapKit() {

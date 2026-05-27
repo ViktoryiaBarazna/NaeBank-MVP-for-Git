@@ -1567,6 +1567,60 @@
         }
       }
     },
+    "maps_map_type_standard" : {
+      "comment" : "Карты. Тип карты — схема (standard)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Standard"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Схема"
+          }
+        }
+      }
+    },
+    "maps_map_type_satellite" : {
+      "comment" : "Карты. Тип карты — спутник (satellite)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Satellite"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Спутник"
+          }
+        }
+      }
+    },
+    "maps_map_type_hybrid" : {
+      "comment" : "Карты. Тип карты — гибрид (hybrid)",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hybrid"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Гибрид"
+          }
+        }
+      }
+    },
     "tabbar_setups" : {
       "comment" : "Таббар. Настройки",
       "extractionState" : "manual",
